@@ -21,6 +21,7 @@ SCREEN_HEIGHT = 600
 
 
 class Coin(arcade.Sprite):
+    """ This part is new """
 
     def update(self):
         self.center_y -= 1
@@ -67,8 +68,8 @@ class MyGame(arcade.Window):
         # Create the coins
         for i in range(COIN_COUNT):
 
-            # Create the coin instance
-            # Coin image from kenney.nl
+            # Create the coin instance - note it is now an instance of the Coin class
+            # Coin image from built in resources
             coin = Coin(":resources:images/items/coinGold.png", SPRITE_SCALING_COIN)
 
             # Position the coin

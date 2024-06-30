@@ -6,9 +6,10 @@ This shows you the following features:
 - the coins and player sprites are managed using sprite lists
 - all the code setting things up (e.g. creating sprites, zeroing score) is abstracted away
   into a Setup method of the window Class
-- moving the player sprite using the mouse
-- dealing with collisions between sprites using hit lists, and removing the coins (collectible item)
-  after collision
+- moving the player sprite using the mouse is dealt with using a separate method which detects mouse
+  movement and moves the sprite to the mouse coordinates
+- the update method deals with collisions between sprites using hit lists, and removing the coins
+  (collectible item) after collision
 """
 
 import random
